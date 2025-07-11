@@ -32,22 +32,22 @@ module Plans
         l = level date
         case season(date)
         when :winter
-          0.0976
+          0.1046
         when :summer
           case l
           when :off_peak
-            0.1267
+            0.1292
           when :on_peak
-            0.1310
+            0.1335
           else
             raise "Bad level"
           end
         when :summer_peak
           case l
           when :off_peak
-            0.1333
+            0.1358
           when :on_peak
-            0.1446
+            0.1471
           else
             raise "Bad level"
           end

@@ -34,33 +34,33 @@ module Plans
         when :winter
           case l
           when :super_off_peak
-            0.0575
+            0.0839
           when :off_peak
-            0.0737
+            0.1001
           when :on_peak
-            0.0951
+            0.0215
           else
             raise "Bad level"
           end
         when :summer
           case l
           when :super_off_peak
-            0.0611
+            0.0812
           when :off_peak
-            0.0765
+            0.0966
           when :on_peak
-            0.2094
+            0.2295
           else
             raise "Bad level"
           end
         when :summer_peak
           case l
           when :super_off_peak
-            0.0614
+            0.0815
           when :off_peak
-            0.0770
+            0.0971
           when :on_peak
-            0.2409
+            0.2610
           else
             raise "Bad level"
           end
